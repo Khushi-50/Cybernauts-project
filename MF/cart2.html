@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="cart.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body >  
+    <h1 class="ucart">YOUR CART</h1>
+<button class="button" >
+    <a href="maini.html">BACK TO MENU
+</a></button>
+<!-- <div id="cart-items"></div> -->
+
+<div class="container">
+    <!-- <img src="freepik__adjust__90809.jpg"> -->
+    <div class="left">
+    <div class="h1"> CART-ITEMS
+        <hr>
+    </div>  
+        <div id="cart-items">
+         
+        </div>
+    </div>
+
+
+<div class="right">
+    <h1>ORDER DETAILS:</h1>
+<div class="details"> 
+    
+ INSTRUCTIONS
+ <br> <input type="data" placeholder="Less spicy/sweet/poison...">
+ <button>SEND</button>
+
+<div class="sum">
+    <h3>SUMMARY:</h3>
+</div>
+<br>
+ 
+ <h5>DELIVERY FEE:</h5>
+ <!-- <H5>DISCOUNT</H5> -->
+ <h4>TOTAL:        $.00</h4>
+ <!-- <div class="payment">  -->
+    <button class="payment"><a href="delivery box.html">ORDER</a>
+    </button>
+<!-- </div> -->
+
+ <h3>THANK YOU !</h3>
+
+</div>
+</div>
+</div>
+</body>
+<script>
+    // Retrieve the cart data from localStorage
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Display the cart items
+//created a div cart items in html and named it this in js
+const cont=document.querySelector('.left')
+// const cartItemsContainer = document.getElementsByName('container');
+//why did i take this./?
+// for addidng css i added caritems div ke andr innerhtml
+cart.forEach(item => {
+    const cartItemElement = document.createElement('div');
+    cartItemElement.innerHTML = `
+    <div class=cartitems>
+        
+        <img src="${item.imgSrc}" alt="${item.name}" style="width: 100px;">
+        <h2>${item.name}</h2>
+        <p>${item.price}</p>
+
+           </div>
+    `;
+    cont.appendChild(cartItemElement);
+
+});
+    const ordersum=document.querySelector(".sum")
+    // const orderdetails=document.createElement('div')
+
+    cart.forEach(item=>{
+        const orderdetails=document.createElement('div')
+        orderdetails.innerHTML=`
+        <div class="odetails">
+
+  <P>${item.name} </P>
+  <p>${item.price}</p>
+      </div> `
+
+    ordersum.appendChild(orderdetails);
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

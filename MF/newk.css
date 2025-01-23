@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+}
+
+.body2 {
+    /* background-image: url(AC-Main-Dark-Wood.jpg); */
+    /* background-color: rgb(121, 130, 167); */
+    /* background-color: color-mix(in hsl longer hue, color percentage, color percentage); */
+
+    /* background-color: rgba(8, 67, 227, 0.334); */
+    background-color: rgb(176, 176, 211);
+
+    /* background-color: rgba(1, 50, 32, 0.7); */
+
+    background-repeat: no-repeat;
+background-size: cover;
+    background-position: center;}
+.iknow{
+    
+    /* background-color: rgba(144, 138, 138, 0.3); */
+
+    /* background-color:rgba(100, 100, 100, 0.3); */
+    /* border-right: 1px solid orange; border-left: 1px solid orange; */
+
+
+    backdrop-filter: blur(10px);
+color: #2a292a;
+font-family: 'Times New Roman', Times, serif;
+/* font-size: 90px; */
+/* margin-inline: auto; */
+ overflow: hidden;
+ /* single line  */
+white-space: nowrap;
+/* text wrap around  */
+display: inline-block;
+/* Keep the element inline-block to maintain its width */
+text-align: center; /* Ensures the text is centered */
+ border-right: 1px solid;
+ border-left: 1px solid;
+     animation: typ 3s steps(40) forwards;
+    /* blink 1s step-end infinite; */
+    
+    /* using forwards the border right woukd say at its lace that is 45%an dnot aage iche
+    
+     */ }
+@keyframes typ {
+    
+    from{
+     width: 0%;
+    }
+   
+    to{     width: 40vw;   
+ } 
+}  
+
+.iknow1{
+    /* background-color: rgba(107, 126, 179, 0.3);
+    background-color: rgb(236, 174, 74); */
+/* background-color: ; */
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+color: rgb(45, 47, 49);
+}
+/* .cssFont_1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    } */
+.iknow2{
+    margin-top: 0;
+    /* background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(18px); */
+    background-color: rgba(21, 32, 67, 0.3);
+    backdrop-filter: blur(18px);
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+
+#head {
+    color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#head h1 {
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    text-align: center;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head2 {
+    height: 150px;
+    text-align: center;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+
+#head2 h1 {
+    margin-top: 10px;
+}
+
+.items {
+    margin-right: 10vw;
+    height: 100vh;
+    width: 80vw;
+    margin-left: 10vw;
+    display: grid;
+    grid-template-rows: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.food {
+    
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+   border-radius: 4%;
+  justify-content: space-between;
+}
+
+.food h2 {
+    color: rgb(20, 19, 18);
+}
+
+.food p {
+    color: rgb(6, 8, 17);
+}
+
+.food img {
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+table {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid rgb(236, 236, 221);
+    /* box-shadow: #f2f2f2; */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(176, 176, 211);
+}
+
+tr {
+    margin-bottom: 10px; /* Add gap between rows */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row color */
+}
+button{
+    background-color: #f2f2f2;
+    width: 10%;
+    border-radius: 10%;
+    /* -index: 99999; */
+    cursor: pointer;
+    height: 40px;
+    font-size: 18px;
+ 
+
+}
+
+#mylink{
+    text-decoration: none;
+    color: black;
+}
+
+#lowerheader{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px; 
+    /* background-color: rgb(124, 97, 143); */
+    /* background-image: url(AC-Main-Dark-Wood.jpg); */
+    transform:rotate(180deg);
+    opacity: 100%;
+    /* background-color: rgba(14, 3, 44, 0.3); */
+    /* background-color: rgba(21, 32, 67, 0.3); */
+    background-color: rgb(176, 176, 211);
+
+}
